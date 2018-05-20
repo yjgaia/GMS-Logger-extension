@@ -32,6 +32,62 @@ logs = ds_list_create();
 color = c_black;
 
 is_overlay_mode = true;
+
+scroll_y = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="61">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// 스크롤 다운
+
+scroll_y -= 80;
+
+if (scroll_y &lt; 0) {
+    scroll_y = 0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="60">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// 스크롤 업
+
+scroll_y += 80;
 </string>
           </argument>
         </arguments>
@@ -64,7 +120,7 @@ if (ds_list_size(logs) * 12 &gt; display_get_gui_height() - 100) {
 }
 
 for (var i = 0; i &lt; ds_list_size(logs); i += 1) {
-    draw_text(0, i * 12 + dy, ds_list_find_value(logs, i));
+    draw_text(0, i * 12 + dy + scroll_y, ds_list_find_value(logs, i));
 }
 </string>
           </argument>
