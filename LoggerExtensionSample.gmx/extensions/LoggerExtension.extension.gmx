@@ -27,8 +27,8 @@
   <iosThirdPartyFrameworks/>
   <androidPermissions/>
   <IncludedResources>
-    <Resource>Scripts\log</Resource>
-    <Resource>Scripts\log_map</Resource>
+    <Resource>Scripts\log.gml</Resource>
+    <Resource>Scripts\log_map.gml</Resource>
     <Resource>Objects\object_logger</Resource>
   </IncludedResources>
   <files/>
