@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>/// test log
 
-log(random_range(0, 255));
+logger(random_range(0, 255));
 
 object_logger.color = make_colour_rgb(random_range(0, 255), random_range(0, 255), random_range(0, 255));
 </string>

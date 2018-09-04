@@ -11,8 +11,8 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\log.gml</script>
-    <script>scripts\log_map.gml</script>
+    <script>scripts\logger.gml</script>
+    <script>scripts\logger_map.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\object_logger</object>

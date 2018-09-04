@@ -2,5 +2,5 @@
 
 var map = argument0;
 
-log(json_encode(target));
+logger(json_encode(map));
 
